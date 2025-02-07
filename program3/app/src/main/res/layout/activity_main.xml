@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/label1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="40dp"
+        android:background="#FF0000"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:text="Paper"/>
+
+    <TextView
+        android:id="@+id/label2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label1"
+        android:layout_alignEnd="@id/label1"
+        android:background="#FF0000"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:text="Pen"/>
+
+    <TextView
+        android:id="@+id/label3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/label2"
+        android:layout_alignTop="@id/label2"
+        android:layout_marginStart="40dp"
+        android:background="#FF0000"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:text="Book"/>
+
+    <TextView
+        android:id="@+id/label4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label3"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="40dp"
+        android:background="#FF0000"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:text="Table"/>
+
+    <TextView
+        android:id="@+id/label5"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label4"
+        android:layout_alignStart="@id/label1"
+        android:layout_marginBottom="40dp"
+        android:background="#FF0000"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:text="Chair"/>
+
+    <TextView
+        android:id="@+id/label6"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/label5"
+        android:background="#FF0000"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:text="Box"/>
+
+    <TextView
+        android:id="@+id/label7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label6"
+        android:layout_centerHorizontal="true"
+        android:background="#FF0000"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:text="Pencil"/>
+</RelativeLayout>
+
+    <!--
+
+        android:layout_width, layout_height
+
+        android:layout_marginTop, layout_marginBottom, layout_marginStart, layout_marginEnd
+
+        android:layout_above, layout_below, layout_toStartOf, android:layout_toEndof
+
+        android:layout_alignTop, layout_alignBottom, layout_alignStart, layout_alignEnd
+
+        android:layout_alignParentEnd, layout_alignParentStart, layout_alignParentTop, layout_alignParentBottom
+
+        android:layout_centerHorizontal, layout_centerVertical, layout_centerInParent
+
+    -->

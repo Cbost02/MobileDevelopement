@@ -44,6 +44,7 @@ public class MainActivity extends AppCompatActivity
         float investment_rate = Float.parseFloat(investment_rate_string);
 
         Calculator calculator = new Calculator(principal, annual_addition, investment_rate, number_of_years);
+
         int total = calculator.getAmount();
 
 

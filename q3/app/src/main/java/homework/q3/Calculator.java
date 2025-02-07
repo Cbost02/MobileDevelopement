@@ -20,12 +20,12 @@ public class Calculator
 
     public int getAmount()
     {
-        float x = (initial + (100*(addition/rate)));
-        float y = (float)(Math.pow(1+(rate/100),years));
-        float z = 100*(addition/rate);
+        double rateDecimal = rate / 100.0;
+        double growthFactor = Math.pow(1 + rateDecimal, years);
 
+        double amount = initial * growthFactor + addition * ((growthFactor - 1) / rateDecimal);
 
-        return Math.round(x*y-z);
+        return (int)Math.round(amount);
     }
 
 

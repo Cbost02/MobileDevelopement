@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/input_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FF0000"
+        android:textColorHint="@color/black"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="45dp"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:hint="First Name:"
+        />
+
+    <EditText
+        android:id="@+id/input_two"
+        android:layout_width="wrap_content"
+        android:textColorHint="@color/black"
+        android:layout_height="wrap_content"
+        android:background="#FF0000"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="45dp"
+        android:textSize="25dp"
+        android:padding="5dp"
+        android:gravity="center"
+        android:hint="Last Name:"
+        />
+
+    <EditText
+        android:id="@+id/input_three"
+        android:layout_width="wrap_content"
+        android:textColorHint="@color/black"
+        android:layout_height="wrap_content"
+        android:background="#FF0000"
+        android:layout_marginTop="220dp"
+        android:layout_marginStart="45dp"
+        android:textSize="25dp"
+        android:padding="5dp"
+        android:gravity="center"
+        android:hint="MM/DD/YYYY:"
+        />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:text="Generate"
+        android:onClick="generate"
+        />
+
+    <TextView
+        android:id="@+id/output_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FF0000"
+        android:layout_marginTop="520dp"
+        android:layout_marginStart="45dp"
+        android:textSize="25dp"
+        android:padding="5dp"
+        android:gravity="center"
+        android:hint="User ID"
+        />
+
+
+    <TextView
+        android:id="@+id/output_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FF0000"
+        android:layout_marginTop="600dp"
+        android:layout_marginStart="45dp"
+        android:textSize="25dp"
+        android:padding="5dp"
+        android:gravity="center"
+        android:hint="Password"
+        />
+
+
+
+
+
+
+</RelativeLayout>

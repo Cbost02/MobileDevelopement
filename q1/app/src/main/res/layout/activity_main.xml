@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/firstNum"
+        android:layout_width="250dp"
+        android:inputType="numberDecimal"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/blue"
+        android:gravity="center"
+        android:hint="input #1"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/text_size" />
+
+
+    <EditText
+        android:id="@+id/secondNum"
+        android:inputType="numberDecimal"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="150dp"
+        android:gravity="center"
+        android:textSize="@dimen/text_size"
+        android:textColor="@color/orange"
+        android:hint="input# 2"
+        />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="300dp"
+        android:text="+"
+        android:textSize="@dimen/text_size"
+        android:onClick="add"
+        />
+
+    <Button
+        android:id="@+id/subButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="300dp"
+        android:text="-"
+        android:textSize="@dimen/text_size"
+        android:onClick="sub"
+        />
+
+    <Button
+        android:id="@+id/divButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="390dp"
+        android:text="/"
+        android:textSize="@dimen/text_size"
+        android:onClick="div"
+        />
+
+    <Button
+        android:id="@+id/mulButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="390dp"
+        android:text="x"
+        android:textSize="@dimen/text_size"
+        android:onClick="mul"
+        />
+
+
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:hint="result"
+        android:layout_marginTop="540dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/text_size"
+        android:textColor="@color/orange"
+        />
+
+
+</RelativeLayout>

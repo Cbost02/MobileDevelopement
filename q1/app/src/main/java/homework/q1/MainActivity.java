@@ -36,6 +36,16 @@ public class MainActivity extends AppCompatActivity
 
         TextView outputBox = findViewById(R.id.output);
 
+
+        // If the result is a integer, convert to int
+        if(result % 1 == 0)
+        {
+            int resultInt = (int)result;
+            String outgoingString = "" + resultInt;
+            outputBox.setText(outgoingString);
+            return;
+        }
+
         String outgoingString = "" + result;
         outputBox.setText(outgoingString);
 
@@ -57,6 +67,16 @@ public class MainActivity extends AppCompatActivity
 
         TextView outputBox = findViewById(R.id.output);
 
+
+        // If the result is a integer, convert to int
+        if(result % 1 == 0)
+        {
+            int resultInt = (int)result;
+            String outgoingString = "" + resultInt;
+            outputBox.setText(outgoingString);
+            return;
+        }
+
         String outgoingString = "" + result;
         outputBox.setText(outgoingString);
     }
@@ -69,12 +89,23 @@ public class MainActivity extends AppCompatActivity
         String stringOne = inputOne.getText().toString();
         String stringTwo = inputTwo.getText().toString();
 
+
         float numberOne = Float.parseFloat(stringOne);
         float numberTwo = Float.parseFloat(stringTwo);
 
         float result = numberOne * numberTwo;
 
         TextView outputBox = findViewById(R.id.output);
+
+        // If the result is a integer, convert to int
+        if(result % 1 == 0)
+        {
+            int resultInt = (int)result;
+            String outgoingString = "" + resultInt;
+            outputBox.setText(outgoingString);
+            return;
+        }
+
 
         String outgoingString = "" + result;
         outputBox.setText(outgoingString);
@@ -91,13 +122,30 @@ public class MainActivity extends AppCompatActivity
         float numberOne = Float.parseFloat(stringOne);
         float numberTwo = Float.parseFloat(stringTwo);
 
+        TextView outputBox = findViewById(R.id.output);
+
         float result = numberOne / numberTwo;
 
-        TextView outputBox = findViewById(R.id.output);
+        // If the result is a integer, convert to int
+        if(result % 1 == 0)
+        {
+            int resultInt = (int)result;
+            String outgoingString = "" + resultInt;
+            outputBox.setText(outgoingString);
+            return;
+        }
 
         String outgoingString = "" + result;
         outputBox.setText(outgoingString);
     }
+
+    /**
+     * if (numberOne % numberTwo == 0)
+     * {
+     *     int result = (int)(numberOne / numberTwo);
+     *
+     * }
+     */
 
 
 

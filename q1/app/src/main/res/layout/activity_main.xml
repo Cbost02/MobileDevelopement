@@ -13,11 +13,12 @@
         android:layout_width="250dp"
         android:inputType="numberDecimal"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
         android:background="@color/blue"
         android:gravity="center"
         android:hint="input #1"
+        android:textColorHint="@color/black"
         android:textColor="@color/orange"
         android:textSize="@dimen/text_size" />
 
@@ -28,65 +29,66 @@
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:background="@color/blue"
-        android:layout_marginStart="40dp"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="150dp"
         android:gravity="center"
         android:textSize="@dimen/text_size"
         android:textColor="@color/orange"
         android:hint="input# 2"
+        android:textColorHint="@color/black"
         />
 
     <Button
         android:id="@+id/addButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="300dp"
-        android:text="+"
-        android:textSize="@dimen/text_size"
+        android:layout_marginTop="219dp"
         android:onClick="add"
-        />
+        android:text="+"
+        android:textSize="@dimen/text_size" />
 
     <Button
         android:id="@+id/subButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="220dp"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="300dp"
         android:text="-"
         android:textSize="@dimen/text_size"
         android:onClick="sub"
         />
 
+
     <Button
         android:id="@+id/divButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="220dp"
-        android:layout_marginTop="390dp"
-        android:text="/"
-        android:textSize="@dimen/text_size"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="184dp"
+        android:layout_marginTop="469dp"
         android:onClick="div"
-        />
+        android:text="/"
+        android:textSize="@dimen/text_size" />
 
     <Button
         android:id="@+id/mulButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="390dp"
-        android:text="x"
-        android:textSize="@dimen/text_size"
         android:onClick="mul"
-        />
-
+        android:text="x"
+        android:textSize="@dimen/text_size" />
 
     <TextView
         android:id="@+id/output"
         android:layout_width="500dp"
         android:layout_height="wrap_content"
         android:background="@color/blue"
-        android:hint="result"
         android:layout_marginTop="540dp"
         android:gravity="center"
         android:layout_centerHorizontal="true"

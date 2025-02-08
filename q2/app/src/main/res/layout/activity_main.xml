@@ -12,14 +12,14 @@
         android:id="@+id/input_one"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#FF0000"
+        android:background="#636360"
         android:textColorHint="@color/black"
         android:layout_marginTop="80dp"
         android:layout_marginStart="45dp"
         android:textSize="25dp"
         android:gravity="center"
         android:padding="5dp"
-        android:hint="First Name:"
+        android:hint="First Name"
         />
 
     <EditText
@@ -27,13 +27,13 @@
         android:layout_width="wrap_content"
         android:textColorHint="@color/black"
         android:layout_height="wrap_content"
-        android:background="#FF0000"
+        android:background="#636360"
         android:layout_marginTop="150dp"
         android:layout_marginStart="45dp"
         android:textSize="25dp"
         android:padding="5dp"
         android:gravity="center"
-        android:hint="Last Name:"
+        android:hint="Last Name"
         />
 
     <EditText
@@ -41,13 +41,13 @@
         android:layout_width="wrap_content"
         android:textColorHint="@color/black"
         android:layout_height="wrap_content"
-        android:background="#FF0000"
+        android:background="#636360"
         android:layout_marginTop="220dp"
         android:layout_marginStart="45dp"
         android:textSize="25dp"
         android:padding="5dp"
         android:gravity="center"
-        android:hint="MM/DD/YYYY:"
+        android:hint="MM/DD/YYYY"
         />
 
 

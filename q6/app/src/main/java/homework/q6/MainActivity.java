@@ -20,10 +20,10 @@ public class MainActivity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
-        generator = new Generator();
-        initialize();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        generator = new Generator();
+        initialize();
     }
 
 
@@ -45,10 +45,10 @@ public class MainActivity extends AppCompatActivity
         TextView operator_box = findViewById(R.id.operator);
         TextView score = findViewById(R.id.score);
 
-        number1.setText(number_one);
-        number2.setText(number_two);
+        number1.setText("" + number_one);
+        number2.setText("" + number_two);
         operator_box.setText(operator);
-        score.setText("Score: " + points + "/" + total_questions);
+        score.setText("Score: 0/0");
         submit.setEnabled(true);
         next.setEnabled(false);
     }
@@ -71,54 +71,75 @@ public class MainActivity extends AppCompatActivity
         TextView number2 = findViewById((R.id.view_two));
         TextView operator_box = findViewById(R.id.operator);
         TextView score = findViewById(R.id.score);
+        EditText input = findViewById(R.id.input);
 
-        number1.setText(number_one);
-        number2.setText(number_two);
+        number1.setText("" + number_one);
+        number2.setText("" + number_two);
         operator_box.setText(operator);
         score.setText("Score: " + points + "/" + total_questions);
         submit.setEnabled(true);
         next.setEnabled(false);
+        input.setText("");
     }
 
 
     public void submit(View v)
     {
-        EditText input = findViewById(R.id.input);
-
-        String input_String = input.getText().toString();
-
-        int input_value = (int)Float.parseFloat(input_String);
-
-        int answer = generator.getAnswer();
-
-        if(input_value == answer)
+        try
         {
-            generator.increaseCorrect();
+            EditText input = findViewById(R.id.input);
+
+            String input_String = input.getText().toString();
+
+            int input_value = Integer.parseInt(input_String);
+
+            int answer = generator.getAnswer();
+
+            if(input_value == answer)
+            {
+                generator.increaseCorrect();
+            }
+
+            generator.increaseTotal();
+
+            int total = generator.getTotal();
+            int correct = generator.getCorrect();
+
+            TextView score = findViewById(R.id.score);
+
+            score.setText("Score: " + correct + "/" + total);
+
+            Button submit = findViewById(R.id.submit);
+            Button next = findViewById(R.id.next);
+
+            submit.setEnabled(false);
+            next.setEnabled(true);
         }
-        else if(input_String.equals(""))
+        catch (Exception e)
         {
-            String message = "Please enter a value!";
+            String message = "No answer; no point!";
             int duration = Toast.LENGTH_LONG;
 
             Toast toast = Toast.makeText(this,message,duration);
             toast.show();
+
+            generator.increaseTotal();
+
+            int total = generator.getTotal();
+            int correct = generator.getCorrect();
+
+            TextView score = findViewById(R.id.score);
+
+            score.setText("Score: " + correct + "/" + total);
+
+            Button submit = findViewById(R.id.submit);
+            Button next = findViewById(R.id.next);
+
+            submit.setEnabled(false);
+            next.setEnabled(true);
+
+
         }
-
-        generator.increaseTotal();
-
-        int total = generator.getTotal();
-        int correct = generator.getCorrect();
-
-        TextView score = findViewById(R.id.score);
-
-        score.setText("Score: " + correct + "/" + total);
-
-        Button submit = findViewById(R.id.submit);
-        Button next = findViewById(R.id.next);
-
-        submit.setEnabled(false);
-        next.setEnabled(true);
-
 
 
     }

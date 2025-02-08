@@ -27,7 +27,7 @@ public class Generator
 
     public void generate()
     {
-        int number = rand.nextInt(2);
+        double number = Math.random();
 
         if(0 <= number && number <= 0.25)
         {
@@ -43,7 +43,7 @@ public class Generator
             number2 = rand.nextInt(1,999);
             answer = number1 - number2;
         }
-        else if(0.5 < number && 0.5 <= 0.75)
+        else if(0.5 < number && number <= 0.75)
         {
             operator = "*";
             number1 = rand.nextInt(1,99);

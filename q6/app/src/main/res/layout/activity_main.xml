@@ -8,6 +8,107 @@
     tools:context=".MainActivity">
 
 
+    <TextView
+        android:id="@+id/box"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="67dp"
+        android:background="@color/light_green" />
+
+    <TextView
+        android:id="@+id/view_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/box"
+        android:hint="number1"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/operator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:hint="y"
+        android:layout_marginStart="130dp"
+        android:layout_alignBottom="@+id/box"
+        android:background="@color/light_green" />
+
+    <TextView
+        android:id="@+id/view_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/box"
+        android:layout_marginStart="160dp"
+        android:hint="number2"
+        android:textSize="25dp" />
+
+
+    <TextView
+        android:id="@+id/equal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="="
+        android:textSize="25dp"
+        android:layout_alignBottom="@id/box"
+        android:layout_alignLeft="@id/view_two"
+        android:layout_marginStart="130dp"
+
+
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/box"
+        android:layout_marginStart="350dp"
+        android:hint="z"
+        android:textSize="25dp" />
+
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="45dp"
+        android:layout_centerHorizontal="true"
+        android:text="Submit"
+        android:layout_alignTop="@id/box"
+        android:layout_marginTop="130dp" />
+
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/grey"
+        android:text="Score: "
+        android:textSize="25dp"
+        android:textColor="@color/orange"
+        android:layout_alignTop="@id/submit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp" />
+
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="Next"
+        android:layout_alignTop="@id/box"
+        android:layout_marginTop="300dp" />
+
+
+
+
+
+
+
+
+
+
+
 
 
 </RelativeLayout>

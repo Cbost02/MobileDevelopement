@@ -25,7 +25,7 @@ public class Generator
     }
 
 
-    private void generate()
+    public void generate()
     {
         int number = rand.nextInt(2);
 

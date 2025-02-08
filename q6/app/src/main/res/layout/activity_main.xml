@@ -73,7 +73,8 @@
         android:layout_centerHorizontal="true"
         android:text="Submit"
         android:layout_alignTop="@id/box"
-        android:layout_marginTop="130dp" />
+        android:layout_marginTop="130dp"
+        android:onClick="submit" />
 
 
     <TextView
@@ -97,14 +98,8 @@
         android:layout_centerHorizontal="true"
         android:text="Next"
         android:layout_alignTop="@id/box"
-        android:layout_marginTop="300dp" />
-
-
-
-
-
-
-
+        android:layout_marginTop="300dp"
+        android:onClick="next" />
 
 
 

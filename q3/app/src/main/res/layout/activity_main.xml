@@ -12,7 +12,7 @@
         android:id="@+id/principal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Current Principal: "
+        android:hint="Current Principal "
         android:background="#463482"
         android:textColor="#FF0000"
         android:textSize="25dp"

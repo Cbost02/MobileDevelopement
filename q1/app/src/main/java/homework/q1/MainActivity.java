@@ -11,6 +11,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+// Testing changes for branch "homework2
 public class MainActivity extends AppCompatActivity
 {
 

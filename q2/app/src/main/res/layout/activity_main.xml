@@ -28,7 +28,7 @@
                 android:text="Price:"
                 android:background="#149303"
                 android:padding="10dp"
-                android:textSize="25dp"
+                android:textSize="25sp"
                 android:textColor="@color/black"/>
 
             <EditText
@@ -37,9 +37,9 @@
                 android:layout_height="wrap_content"
                 android:padding="10dp"
                 android:layout_marginStart="190dp"
-                android:textSize="25dp"
+                android:textSize="25sp"
                 android:background="@color/black"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
         </RelativeLayout>
 
@@ -56,17 +56,20 @@
                 android:text="Warranty:"
                 android:background="#149303"
                 android:padding="10dp"
-                android:textSize="25dp"
+                android:textSize="25sp"
                 android:textColor="@color/black"/>
 
-            <EditText
-                android:id="@+id/warrantly_button"
+            <ToggleButton
+                android:id="@+id/warranty_button"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
                 android:layout_marginStart="190dp"
                 android:textSize="25dp"
-                android:background="@color/black"
+                android:background="@color/purple"
+                android:backgroundTint="@color/purple"
+                android:textOn="Yes"
+                android:textOff="No"
                 android:textColor="@color/black"/>
 
         </RelativeLayout>
@@ -87,14 +90,15 @@
                 android:textSize="25dp"
                 android:textColor="@color/black"/>
 
-            <EditText
+            <Switch
                 android:id="@+id/insurance_switch"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
                 android:layout_marginStart="190dp"
                 android:textSize="25dp"
-                android:background="@color/black"
+                android:textAlignment="center"
+                android:background="@color/blue"
                 android:textColor="@color/black"/>
 
         </RelativeLayout>
@@ -115,15 +119,16 @@
                 android:textSize="25dp"
                 android:textColor="@color/black"/>
 
-            <EditText
-                android:id="@+id/price_input"
+            <Spinner
+                android:id="@+id/delivery_input"
                 android:layout_width="150dp"
-                android:layout_height="wrap_content"
+                android:layout_height="53dp"
+                android:entries="@array/spinner_values"
                 android:padding="10dp"
                 android:layout_marginStart="190dp"
                 android:textSize="25dp"
-                android:background="@color/black"
-                android:textColor="@color/black"/>
+                android:background="@color/red"
+                android:textColor="@color/white"/>
 
         </RelativeLayout>
 
@@ -166,7 +171,7 @@
         android:textSize="35dp"
         android:padding="20dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="450dp"
+        android:layout_marginTop="450dp"/>
 
 
 

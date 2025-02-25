@@ -4,8 +4,67 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="@color/blue"
     tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/info_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="7dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="155dp"
+        android:background="@color/green">
+
+
+        <TextView
+            android:id="@+id/guess_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="Guess a number between 1-100"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="Chances remaining: 0"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:textSize="25dp"
+            android:text="Enter a guess below"
+            android:layout_marginStart="50dp"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/user_input"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@id/info_box"
+        android:layout_marginTop="310dp"
+        android:background="@color/grey"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textSize="35dp"
+        android:layout_alignLeft="@id/user_input"
+        android:layout_marginTop="410dp"
+        android:layout_marginStart="87dp"
+        android:backgroundTint="@color/red"
+        android:onClick="submit"/>
+
+
+
 
 
 </RelativeLayout>

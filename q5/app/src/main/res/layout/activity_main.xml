@@ -19,23 +19,25 @@
 
 
         <TextView
-            android:id="@+id/guess_box"
+            android:id="@+id/initial_box"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="24sp"
             android:text="Guess a number between 1-100"/>
 
         <TextView
+            android:id="@+id/chance_box"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="24sp"
-            android:text="Chances remaining: 0"/>
+            android:text="Chances remaining: 8"/>
 
         <TextView
+            android:id="@+id/guess_box"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="45dp"
-            android:textSize="25dp"
+            android:textSize="18dp"
             android:text="Enter a guess below"
             android:layout_marginStart="50dp"/>
     </LinearLayout>
@@ -45,7 +47,7 @@
         android:layout_width="350dp"
         android:layout_height="40dp"
         android:layout_alignLeft="@id/info_box"
-        android:layout_marginTop="310dp"
+        android:layout_marginTop="300dp"
         android:background="@color/grey"
         android:inputType="numberDecimal"
         android:textAlignment="center"

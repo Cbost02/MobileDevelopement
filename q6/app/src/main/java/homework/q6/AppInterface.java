@@ -59,6 +59,7 @@ public class AppInterface extends RelativeLayout
         submit_button.setTextSize(TypedValue.COMPLEX_UNIT_SP, 25);
         submit_button.setPadding(20,20,20,20);
         submit_button.setText("Calculate"); // Set button text
+        submit_button.setOnClickListener(buttonHandler);
 
         // LayoutParams for prompt_box
         RelativeLayout.LayoutParams promptParams = new RelativeLayout.LayoutParams(
@@ -92,6 +93,18 @@ public class AppInterface extends RelativeLayout
         addView(input_box, inputParams);
         addView(submit_button, buttonParams); // Add the button
         addView(result_box, resultParams);
+    }
+
+    // Gets the user input from the text field
+    public String getInput()
+    {
+        return input_box.getText().toString();
+    }
+
+    // Sets the texts for the result field
+    public void sendTextToBox(String message)
+    {
+        result_box.setText(message);
     }
 
 }

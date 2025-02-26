@@ -11,14 +11,17 @@ import android.widget.ToggleButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.text.DecimalFormat;
+
 public class MainActivity extends AppCompatActivity
 {
-
+    private DecimalFormat format;
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        format = new DecimalFormat("#.##"); // This is formatting the output!
         ButtonHandler handler = new ButtonHandler(); // Create Button Handler
         Button button = findViewById(R.id.calculate_button); // Call the button from the layout
         button.setOnClickListener(handler); // Attach the handler to the button
@@ -82,8 +85,7 @@ public class MainActivity extends AppCompatActivity
 
             // Call the output widget then store the total price
             TextView output_box = findViewById(R.id.output_box);
-            output_box.setText("$" + total_price);
-
+            output_box.setText("$" + format.format(total_price));
 
 
 

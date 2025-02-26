@@ -7,6 +7,7 @@ public class Calculator
     private boolean insurance;
     private String shipping;
 
+    // Constructor
     public Calculator(float price, boolean warranty, boolean insurance, String shipping)
     {
         this.price = price;

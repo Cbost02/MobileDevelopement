@@ -9,12 +9,14 @@
     tools:context=".MainActivity">
 
 
+    <!-- Start of the LinearLayout -->
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:orientation="vertical">
 
+        <!-- Section for the user input (price) -->
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -45,6 +47,7 @@
 
         </RelativeLayout>
 
+        <!-- Section for the warranty -->
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -61,6 +64,7 @@
                 android:textSize="25sp"
                 android:textColor="@color/black"/>
 
+            <!-- Button that toggles between yes & no -->
             <ToggleButton
                 android:id="@+id/warranty_button"
                 android:layout_width="150dp"
@@ -76,6 +80,7 @@
 
         </RelativeLayout>
 
+        <!-- Section for the insurance -->
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -92,6 +97,7 @@
                 android:textSize="25dp"
                 android:textColor="@color/black"/>
 
+            <!-- a switch that turns off & on -->
             <Switch
                 android:id="@+id/insurance_switch"
                 android:layout_width="150dp"
@@ -105,6 +111,7 @@
 
         </RelativeLayout>
 
+        <!-- Section for the delivery -->
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -121,6 +128,7 @@
                 android:textSize="25dp"
                 android:textColor="@color/black"/>
 
+            <!-- Spinner that contains 3 choices; see string.xml -->
             <Spinner
                 android:id="@+id/delivery_input"
                 android:layout_width="150dp"
@@ -135,6 +143,7 @@
         </RelativeLayout>
 
 
+        <!-- Section for the returned output -->
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -166,6 +175,7 @@
 
     </LinearLayout>
 
+    <!-- Button to calculate the total cost -->
     <Button
         android:id="@+id/calculate_button"
         android:layout_width="wrap_content"

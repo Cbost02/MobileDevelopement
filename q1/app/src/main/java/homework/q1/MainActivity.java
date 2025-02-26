@@ -28,7 +28,6 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_main);
         Button button = findViewById(R.id.button);
         ButtonHandler handler = new ButtonHandler();
@@ -42,109 +41,88 @@ public class MainActivity extends AppCompatActivity
         @Override
         public void onClick(View v)
         {
-            // Setting up the Toast messages for missing scores
-            String message_PA = "There's no grade for the programming assignment!";
-            String message_midterm = "There's no grade for the midterm!";
-            String message_final = "There's no grade for the final exam!";
-
-            //  Setting up duration of the Toast message
-            int duration = Toast.LENGTH_LONG;
-
-            // Setting up the Toast messages for valid scores
-            String message_invalid_PA = "Programming Assignment entry is invalid!";
-            String message_invalid_midterm = "Midterm entry is invalid!";
-            String message_invalid_final = "Programming Assignment entry is invalid!";
-
-            // Declare Toast object
-            Toast toast;
             try
             {
-                // Getting information from the Programming Assignment Text Entry
+                // Retrieves the input from the user then converts it to a String
                 EditText program_box = findViewById(R.id.assignment_input);
-                String program_string = program_box.getText().toString();
+                String program_string = program_box.getText().toString().trim();
 
-                // Check to see if the Assignment input was empty before parsing
-                if(program_string.trim().isEmpty())
+                // Checks if the programming assignment text field is empty
+                if (program_string.isEmpty())
                 {
-                    toast = Toast.makeText(MainActivity.this, message_PA,duration);
-                    toast.show();
-                    return; // Ends the method
+                    Toast.makeText(v.getContext(), "There's no grade for the programming assignment!", Toast.LENGTH_LONG).show();
+                    return;
                 }
+
+                // If it's not empty, process normally
                 float program_info = Float.parseFloat(program_string);
 
-                // Getting information from the Midterm Text Entry
+                // Retrieves info from the midterm text field
                 EditText midterm_box = findViewById(R.id.midterm_input);
-                String midterm_string = midterm_box.getText().toString();
+                String midterm_string = midterm_box.getText().toString().trim();
 
-                // Check to see if the Midterm input was empty before parsing
-                if(midterm_string.trim().isEmpty())
+                // Checks if the midterm text field is empty
+                if (midterm_string.isEmpty())
                 {
-                    toast = Toast.makeText(MainActivity.this, message_midterm,duration);
-                    toast.show();
-                    return; // Ends the method
+                    Toast.makeText(v.getContext(), "There's no grade for the midterm!", Toast.LENGTH_LONG).show();
+                    return;
                 }
+
+                // If it's not empty, process normally
                 float midterm_info = Float.parseFloat(midterm_string);
 
-                // Getting information from the Final Exam Text Entry
+                // Retrieves info from the final exam text field
                 EditText final_box = findViewById(R.id.final_input);
-                String final_string = final_box.getText().toString();
+                String final_string = final_box.getText().toString().trim();
 
-                // Check to see if the Final Exam input was empty before parsing
-                if(final_string.trim().isEmpty())
+                // Checks if the final exam text field is empty
+                if (final_string.isEmpty())
                 {
-                    toast = Toast.makeText(MainActivity.this, message_final,duration);
-                    toast.show();
-                    return; // Ends the method
+                    Toast.makeText(v.getContext(), "There's no grade for the final exam!", Toast.LENGTH_LONG).show();
+                    return;
                 }
-
+                // If it's not empty, process normally
                 float final_info = Float.parseFloat(final_string);
 
-
-                // Before calculating, we must check to see if the scores are valid
-
-                if(program_info < 0 || program_info > 200)
+                // Validate score ranges
+                if (program_info < 0 || program_info > 200)
                 {
-                    toast = Toast.makeText(MainActivity.this, message_invalid_PA,duration);
-                    toast.show();
-                    program_box.setText("" + 0);
+                    Toast.makeText(v.getContext(), "Programming Assignment entry is invalid!", Toast.LENGTH_LONG).show();
+                    program_box.setText("0");
                 }
 
-                if(midterm_info < 0 || midterm_info > 100)
+                if (midterm_info < 0 || midterm_info > 100)
                 {
-                    toast = Toast.makeText(MainActivity.this, message_invalid_midterm,duration);
-                    toast.show();
-                    midterm_box.setText("" + 0);
+                    Toast.makeText(v.getContext(), "Midterm entry is invalid!", Toast.LENGTH_LONG).show();
+                    midterm_box.setText("0");
                 }
 
                 if (final_info < 0 || final_info > 100)
                 {
-                    toast = Toast.makeText(MainActivity.this, message_invalid_final,duration);
-                    toast.show();
-                    midterm_box.setText("" + 0);
+                    Toast.makeText(v.getContext(), "Final Exam entry is invalid!", Toast.LENGTH_LONG).show();
+                    final_box.setText("0"); // Fixed: Now setting final_box instead of midterm_box
                     return;
                 }
 
-                // Initialize the calculator object
-                calculator = new Calculator(program_info, midterm_info,final_info);
+                // Initialize the calculator
+                calculator = new Calculator(program_info, midterm_info, final_info);
 
-                // Retrieves the final score & grade from the model
+                // Get results
                 char letter_grade = calculator.getGrade();
-                int score = (int)Math.round(calculator.getScore());
+                int score = (int) Math.round(calculator.getScore());
 
-                // Calls the score & letter grade widgets
+                // Update UI
                 TextView output_score = findViewById(R.id.score_output);
                 TextView output_grade = findViewById(R.id.letter_output);
 
-                output_score.setText("" + score);
-                output_grade.setText("" + letter_grade);
+                output_score.setText(String.valueOf(score));
+                output_grade.setText(String.valueOf(letter_grade));
             }
-            catch(Exception e) // If any other error happens, this catch block will handle it
+            catch (Exception e)
             {
-                String error_message = e.getMessage();
-                toast = Toast.makeText(MainActivity.this,error_message,duration);
-                toast.show();
+                // Any default error will occur in here
+                Toast.makeText(v.getContext(), "Error: " + e.getMessage(), Toast.LENGTH_LONG).show();
             }
-
         }
     }
 }

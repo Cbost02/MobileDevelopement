@@ -22,10 +22,10 @@
 
             <!-- Assignment Text Field -->
             <TextView
+                style="@style/label_background"
                 android:id="@+id/assignment_label"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:background="@color/green"
                 android:padding="8dp"
                 android:textSize="@dimen/text_size"
                 android:textColor="@color/black"
@@ -33,14 +33,13 @@
                 android:text="Assignment:" />
 
             <EditText
+                style="@style/text_field_background"
                 android:id="@+id/assignment_input"
                 android:layout_height="wrap_content"
                 android:layout_width="150dp"
-                android:inputType="numberDecimal"
                 android:padding="8dp"
                 android:textSize="@dimen/text_size"
-                android:textColor="#FFFFFF"
-                android:background="@color/grey" />
+                android:textColor="#FFFFFF" />
         </TableRow>
 
         <TableRow
@@ -48,10 +47,10 @@
 
             <!-- Midterm Text Field -->
             <TextView
+                style="@style/label_background"
                 android:id="@+id/midterm_label"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:background="@color/green"
                 android:padding="8dp"
                 android:textSize="@dimen/text_size"
                 android:textColor="@color/black"
@@ -59,13 +58,13 @@
                 android:text="Midterm:" />
 
             <EditText
+                style="@style/text_field_background"
                 android:id="@+id/midterm_input"
                 android:layout_height="wrap_content"
                 android:layout_width="100dp"
                 android:padding="8dp"
                 android:textSize="@dimen/text_size"
-                android:textColor="#FFFFFF"
-                android:background="@color/grey" />
+                android:textColor="#FFFFFF" />
         </TableRow>
 
         <TableRow
@@ -73,10 +72,10 @@
 
             <!-- Final Exam Text Field -->
             <TextView
+                style="@style/label_background"
                 android:id="@+id/final_label"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:background="@color/green"
                 android:padding="8dp"
                 android:textSize="@dimen/text_size"
                 android:textColor="@color/black"
@@ -84,13 +83,13 @@
                 android:text="Final Exam:" />
 
             <EditText
+                style="@style/text_field_background"
                 android:id="@+id/final_input"
                 android:layout_height="wrap_content"
                 android:layout_width="150dp"
                 android:padding="8dp"
                 android:textSize="@dimen/text_size"
-                android:textColor="#FFFFFF"
-                android:background="@color/grey" />
+                android:textColor="#FFFFFF" />
         </TableRow>
 
         <TableRow
@@ -98,10 +97,10 @@
 
             <!-- Final Score Text Field -->
             <TextView
+                style="@style/label_background"
                 android:id="@+id/score_label"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:background="@color/green"
                 android:padding="8dp"
                 android:textSize="@dimen/text_size"
                 android:textColor="@color/black"
@@ -109,14 +108,14 @@
                 android:text="Final Score:" />
 
             <TextView
+                style="@style/text_field_background"
                 android:id="@+id/score_output"
                 android:layout_height="wrap_content"
                 android:layout_width="150dp"
                 android:padding="8dp"
                 android:gravity="center"
                 android:textSize="@dimen/text_size"
-                android:textColor="#FFFFFF"
-                android:background="@color/grey" />
+                android:textColor="#FFFFFF"/>
         </TableRow>
 
         <TableRow
@@ -124,10 +123,10 @@
 
             <!-- Letter Grade Text Field -->
             <TextView
+                style="@style/label_background"
                 android:id="@+id/letter_label"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:background="@color/green"
                 android:padding="8dp"
                 android:textSize="@dimen/text_size"
                 android:textColor="@color/black"
@@ -136,14 +135,14 @@
                 android:text="Letter Grade:" />
 
             <TextView
+                style="@style/text_field_background"
                 android:id="@+id/letter_output"
                 android:layout_height="wrap_content"
                 android:layout_width="150dp"
                 android:padding="8dp"
                 android:textSize="@dimen/text_size"
                 android:textColor="#FFFFFF"
-                android:textAlignment="center"
-                android:background="@color/grey" />
+                android:textAlignment="center"/>
         </TableRow>
     </TableLayout>
 

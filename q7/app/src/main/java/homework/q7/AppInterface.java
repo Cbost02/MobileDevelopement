@@ -169,6 +169,7 @@ public class AppInterface extends RelativeLayout
     }
 
 
+    // Rewriting the current board to the app
     public void drawCurrent(char[][] current)
     {
         for (int i = 0; i < board.length; i++)
@@ -180,6 +181,7 @@ public class AppInterface extends RelativeLayout
         }
     }
 
+    // Displaying the goal board to the app
     public void drawGoal(char[][] goal)
     {
         for (int i = 0; i < goal_board.length; i++)
@@ -191,6 +193,7 @@ public class AppInterface extends RelativeLayout
         }
     }
 
+    // Finding one of the 4 buttons
     public char findButton(Button button)
     {
         if (button == up)
@@ -213,6 +216,7 @@ public class AppInterface extends RelativeLayout
 
     }
 
+    // Disables all buttons
     public void disableButtons()
     {
         up.setEnabled(false);

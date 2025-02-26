@@ -58,6 +58,8 @@ public class MainActivity extends AppCompatActivity
             }
             screen.drawCurrent(game.getCurrent_board()); // Update the display
 
+
+            // Toast message is displayed when the game is won
             if(game.isSolved())
             {
                 String message = "You won the game!";
@@ -65,7 +67,6 @@ public class MainActivity extends AppCompatActivity
                 Toast toast = Toast.makeText(MainActivity.this, message, duration);
                 toast.show();
                 screen.disableButtons();
-
             }
         }
 

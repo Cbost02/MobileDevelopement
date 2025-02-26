@@ -11,6 +11,7 @@ public class Game
         board = sudoku.generate();
     }
 
+    // set value to spot
     public void set(int value, int x, int y)
     {
         board[x][y] = value;
@@ -18,7 +19,7 @@ public class Game
 
     public boolean check(int value, int x, int y)
     {
-        //Check Row
+        // check Row
         for(int j = 0; j < 9; j++)
         {
             if(board[x][j] == value)
@@ -27,7 +28,7 @@ public class Game
             }
         }
 
-        //Check Column
+        // check Column
         for(int i = 0; i < 9; i++)
         {
             if(board[i][y] == value)
@@ -57,5 +58,21 @@ public class Game
     public int[][] getBoard()
     {
         return board;
+    }
+
+    // Check if the game is won
+    public boolean checkWin()
+    {
+        for (int i = 0; i < 9; i++)
+        {
+            for (int j = 0; j < 9; j++)
+            {
+                if (board[i][j] == 0 || !check(board[i][j], i, j))
+                {
+                    return false; // If any cell is empty or incorrect, game is not won
+                }
+            }
+        }
+        return true;
     }
 }

@@ -7,6 +7,7 @@
     android:background="@color/blue"
     tools:context=".MainActivity">
 
+    <!-- Linear Layout starts here -->
     <LinearLayout
         android:id="@+id/info_box"
         android:layout_width="wrap_content"
@@ -18,6 +19,7 @@
         android:background="@color/green">
 
 
+        <!-- Game prompt -->
         <TextView
             android:id="@+id/initial_box"
             android:layout_width="wrap_content"
@@ -25,6 +27,7 @@
             android:textSize="24sp"
             android:text="Guess a number between 1-100"/>
 
+        <!-- Box for number of chances left -->
         <TextView
             android:id="@+id/chance_box"
             android:layout_width="wrap_content"
@@ -32,6 +35,8 @@
             android:textSize="24sp"
             android:text="Chances remaining: 8"/>
 
+        <!-- This prompt will change to show if the number is higher
+             or lower-->
         <TextView
             android:id="@+id/guess_box"
             android:layout_width="wrap_content"
@@ -42,6 +47,7 @@
             android:layout_marginStart="50dp"/>
     </LinearLayout>
 
+    <!-- User text field -->
     <EditText
         android:id="@+id/user_input"
         android:layout_width="350dp"
@@ -53,6 +59,7 @@
         android:textAlignment="center"
         android:textSize="20dp" />
 
+    <!-- Submit button -->
     <Button
         android:id="@+id/submit_button"
         android:layout_width="wrap_content"

@@ -28,6 +28,7 @@
         android:layout_centerHorizontal="true"/>
 
     <GridLayout
+        android:id="@+id/grid_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:rowCount="3"
@@ -79,6 +80,7 @@
             android:textSize="20sp"
             android:onClick="calculate"/>
         <Button
+            android:id="@+id/max_button"
             android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:text="Max"
@@ -87,6 +89,19 @@
             android:textSize="20sp"
             android:onClick="calculate"/>
 
-
     </GridLayout>
+
+    <TextView
+        android:id="@+id/output_box"
+        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:gravity="center"
+        android:padding="15dp"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:layout_alignTop="@id/grid_layout"
+        android:layout_marginTop="240dp"
+        android:background="@color/purple"
+        android:layout_centerHorizontal="true"/>
+
 </RelativeLayout>

@@ -8,6 +8,7 @@
     android:background="#FFFFFF"
     tools:context=".MainActivity">
 
+    <!-- Prompt box -->
     <TextView
         android:id="@+id/prompt"
         android:layout_width="wrap_content"
@@ -17,6 +18,7 @@
         android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"/>
 
+    <!-- User text field -->
     <EditText
         android:id="@+id/input_box"
         android:layout_width="wrap_content"
@@ -27,6 +29,8 @@
         android:textSize="25sp"
         android:layout_centerHorizontal="true"/>
 
+
+    <!-- Layout for all 6 buttons -->
     <GridLayout
         android:id="@+id/grid_layout"
         android:layout_width="wrap_content"
@@ -37,6 +41,7 @@
         android:layout_alignTop="@id/input_box"
         android:layout_marginTop="95dp">
 
+        <!-- Sum Button -->
         <Button
             android:id="@+id/sum_button"
             android:layout_width="120dp"
@@ -45,6 +50,8 @@
             android:padding="20dp"
             android:textSize="20sp"
             android:onClick="calculate"/>
+
+        <!-- Mean Button -->
         <Button
             android:id="@+id/mean_button"
             android:layout_width="120dp"
@@ -54,6 +61,8 @@
             android:padding="20dp"
             android:textSize="20sp"
             android:onClick="calculate"/>
+
+        <!-- Median Button -->
         <Button
             android:id="@+id/median_button"
             android:layout_width="120dp"
@@ -62,6 +71,8 @@
             android:padding="20dp"
             android:textSize="20sp"
             android:onClick="calculate"/>
+
+        <!-- Standard Deviation Button -->
         <Button
             android:id="@+id/standard_button"
             android:layout_width="120dp"
@@ -71,6 +82,8 @@
             android:padding="20dp"
             android:textSize="20sp"
             android:onClick="calculate"/>
+
+        <!-- Min Button -->
         <Button
             android:id="@+id/min_button"
             android:layout_width="120dp"
@@ -79,6 +92,8 @@
             android:padding="20dp"
             android:textSize="20sp"
             android:onClick="calculate"/>
+
+        <!-- Max Button -->
         <Button
             android:id="@+id/max_button"
             android:layout_width="120dp"
@@ -91,6 +106,7 @@
 
     </GridLayout>
 
+    <!-- Output Text Field-->
     <TextView
         android:id="@+id/output_box"
         android:layout_height="wrap_content"

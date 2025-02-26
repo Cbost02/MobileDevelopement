@@ -12,6 +12,7 @@ public class Calculator
     // Array object
     Array array;
 
+    // Constructor
     public Calculator()
     {
         size = 0;
@@ -40,6 +41,7 @@ public class Calculator
         array = new Array(numbers);
     }
 
+    // Getter methods for each button
     public float getSum()
     {
         return (float)array.getSum();

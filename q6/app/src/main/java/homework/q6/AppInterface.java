@@ -41,17 +41,17 @@ public class AppInterface extends RelativeLayout
         input_box.setHint("Enter here");
         input_box.setGravity(Gravity.CENTER);
         input_box.setPadding(5, 5, 5, 5);
-        // You might want to set inputType to "number" here
 
         // Create & design the result box
         result_box = new TextView(context);
         result_box.setId(TextView.generateViewId());
         result_box.setTextSize(TypedValue.COMPLEX_UNIT_SP, 30);
         result_box.setBackgroundColor(Color.parseColor("#8c9a8e"));
+        result_box.setGravity(Gravity.CENTER);
         result_box.setPadding(5, 5, 5, 5);
         result_box.setHint("Result will be displayed here");
 
-        // Create the button
+        // Create & design the button
         submit_button = new Button(context);
         submit_button.setId(TextView.generateViewId());
         submit_button.setBackgroundColor(Color.parseColor("#ac00ff"));

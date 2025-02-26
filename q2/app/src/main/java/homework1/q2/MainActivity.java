@@ -9,22 +9,19 @@ import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.ToggleButton;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity
 {
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
         ButtonHandler handler = new ButtonHandler(); // Create Button Handler
         Button button = findViewById(R.id.calculate_button); // Call the button from the layout
         button.setOnClickListener(handler); // Attach the handler to the button
-        setContentView(R.layout.activity_main);
     }
 
     private class ButtonHandler implements View.OnClickListener
@@ -59,10 +56,33 @@ public class MainActivity extends AppCompatActivity
 
             // Calling and reading the information from the Shipping widget
             Spinner shipping_spinner = findViewById(R.id.delivery_input);
-            String shipping = ""; // default value
+            String shipping_string = (String)shipping_spinner.getSelectedItem();
 
-            // Make a list of all the spinner attributes
+            // Actual shipping value
+            String shipping = "";
 
+
+            // Check to see which of the spinner choice were selected
+            if(shipping_string.equalsIgnoreCase("Next Day"))
+            {
+                shipping = "Next Day";
+            }
+            else if(shipping_string.equalsIgnoreCase("Second Day"))
+            {
+                shipping = "Second Day";
+            }
+            else if(shipping_string.equalsIgnoreCase("Normal Day"))
+            {
+                shipping = "Normal Day";
+            }
+
+            // Calculate the total price
+            Calculator calculator = new Calculator(price, warranty, insurance, shipping);
+            double total_price = calculator.getTotal();
+
+            // Call the output widget then store the total price
+            TextView output_box = findViewById(R.id.output_box);
+            output_box.setText("$" + total_price);
 
 
 

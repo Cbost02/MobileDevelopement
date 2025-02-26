@@ -34,12 +34,14 @@
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:background="@color/red"
+            android:max="255"
             android:padding="10dp"/>
         <TextView
+            android:id="@+id/red_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="10dp"
-            android:text="Red" />
+            android:text="0" />
 
     </LinearLayout>
 
@@ -54,12 +56,14 @@
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:padding="10dp"
-            android:background="@color/green"/>
+            android:background="@color/green"
+            android:max="255"/>
         <TextView
+            android:id="@+id/green_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="10dp"
-            android:text="Green" />
+            android:text="0" />
 
     </LinearLayout>
 
@@ -74,12 +78,14 @@
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:padding="10dp"
-            android:background="@color/blue"/>
+            android:background="@color/blue"
+            android:max="255"/>
         <TextView
+            android:id="@+id/blue_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="10dp"
-            android:text="Blue" />
+            android:text="0" />
 
     </LinearLayout>
 

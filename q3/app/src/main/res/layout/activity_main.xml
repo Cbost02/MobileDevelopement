@@ -9,11 +9,13 @@
     android:background="@color/white"
     tools:context=".MainActivity">
 
+    <!-- The final color (result) will be displayed in this layout -->
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp">
 
+        <!-- Square box -->
         <TextView
             android:id="@+id/color_box"
             android:layout_width="200dp"
@@ -23,12 +25,14 @@
     </RelativeLayout>
 
 
+    <!-- Layout for the Red Seek Bar -->
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
         android:layout_marginTop="70dp">
 
+        <!-- Seek Bar has the following bounds: 0 - 255 -->
         <SeekBar
             android:id="@+id/red_bar"
             android:layout_width="150dp"
@@ -46,11 +50,13 @@
     </LinearLayout>
 
 
+    <!-- Layout for the Green Seek Bar -->
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp">
 
+        <!-- Seek Bar has the following bounds: 0 - 255 -->
         <SeekBar
             android:id="@+id/green_bar"
             android:layout_width="150dp"
@@ -68,11 +74,13 @@
     </LinearLayout>
 
 
+    <!-- Layout for the Blue Seek Bar -->
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp">
 
+        <!-- Seek Bar has the following bounds: 0 - 255 -->
         <SeekBar
             android:id="@+id/blue_bar"
             android:layout_width="150dp"

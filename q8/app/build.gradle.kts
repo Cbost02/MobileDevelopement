@@ -4,12 +4,12 @@ plugins {
 
 android {
     namespace = "homework.q8"
-    compileSdk = 35
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "homework.q8"
-        minSdk = 35
-        targetSdk = 35
+        minSdk = 31
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 

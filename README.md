@@ -15,13 +15,13 @@ Don't download the project directly from github, you need to clone it, to do thi
   (ii) In turn, my set up would look something like this:
 
     android {
-        namespace = "homework.q1"
-        compileSdk = 34
+    namespace = "homework1.q2"
+    compileSdk = 34
 
     defaultConfig {
-        applicationId = "homework.q1"
-        minSdk = 32
-        targetSdk = 34
+        applicationId = "homework1.q2"
+        minSdk = 33
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
         -
@@ -29,14 +29,14 @@ Don't download the project directly from github, you need to clone it, to do thi
         -
 
         [versions]
-          agp = "8.8.0"
-          junit = "4.13.2"
-          junitVersion = "1.2.1"
-          espressoCore = "3.6.1"
-          appcompat = "1.7.0"
-          material = "1.12.0"
-          activity = "1.8.0"
-          constraintlayout = "1.7.0"
+        agp = "8.8.0"
+        junit = "4.13.2"
+        junitVersion = "1.2.1"
+        espressoCore = "3.6.1"
+        appcompat = "1.7.0"
+        material = "1.12.0"
+        activity = "1.8.0"
+        constraintlayout = "1.8.0"
           -
           -
           -

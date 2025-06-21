@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:background="@color/purple"
+        android:text="Welcome to the mobile application!"
+        android:layout_centerHorizontal="true"
+        android:textSize="23dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_marginTop="100dp"/>
+
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35dp"
+        android:padding="20dp"
+        android:text="Next"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@id/message"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#006600"
+        android:onClick="next"/>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0000CC"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/credits_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number of Credits"
+        android:textSize="23dp"
+        android:background="#007700"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="50dp"/>
+
+    <EditText
+        android:id="@+id/credits_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/credits_label"
+        android:layout_marginTop="100dp"
+        android:textSize="23dp"
+        android:padding="10dp"
+        android:hint="enter"
+        android:textColorHint="#74848b"
+        android:background="#990000"/>
+
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:padding="20dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="Back"
+            android:onClick="back"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:textSize="25sp"
+            android:text="Next"
+            android:onClick="next"/>
+
+
+
+    </GridLayout>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

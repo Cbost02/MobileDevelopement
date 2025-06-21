@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/credits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FF0000"
+        android:hint="Number of credits"
+        android:gravity="center"
+        android:padding="10dp"
+        android:inputType="numberDecimal"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="78dp" />
+
+
+    <RadioGroup
+        android:id="@+id/degree"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="#646069"
+        android:autofillHints="Button"
+        android:orientation="horizontal"
+        android:layout_alignTop="@id/credits"
+        android:layout_marginTop="60dp"
+        android:layout_alignLeft="@+id/credits">
+
+
+        <RadioButton
+            android:id="@+id/graduate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Graduate"
+            android:padding="5dp"
+            android:layout_alignTop="@id/degree"
+            android:textSize="10dp"/>
+
+        <RadioButton
+            android:id="@+id/undergraduate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Undergraduate"
+            android:layout_alignTop="@id/degree"
+
+            android:textSize="10dp"
+            />
+
+
+        <RadioButton
+            android:id="@+id/non_degree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Non-Degree"
+            android:layout_alignTop="@id/degree"
+            android:padding="5sp"
+            android:textSize="10dp"
+            />
+
+    </RadioGroup>
+
+
+
+    <RadioGroup
+        android:id="@+id/state_parent"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="#646069"
+        android:autofillHints="Button"
+        android:orientation="horizontal"
+        android:layout_alignTop="@id/credits"
+        android:layout_marginTop="120dp"
+        android:layout_alignLeft="@+id/credits">
+
+
+        <RadioButton
+            android:id="@+id/in_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="In-State"
+            android:layout_alignTop="@id/degree"
+            android:padding="10dp"
+            android:textSize="10dp"/>
+
+        <RadioButton
+            android:id="@+id/out_state"
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:text="Out-of-State"
+            android:layout_alignTop="@id/degree"
+
+            android:textSize="10dp"
+            />
+
+
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/dorm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/state_parent"
+        android:layout_marginTop="60dp"
+        android:layout_alignLeft="@id/state_parent"
+        android:text="Dormitory" />
+
+    <CheckBox
+        android:id="@+id/dining"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/dorm"
+        android:layout_marginTop="40dp"
+        android:layout_alignLeft="@id/state_parent"
+        android:text="Dining" />
+
+    <CheckBox
+        android:id="@+id/parking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/dining"
+        android:layout_marginTop="40dp"
+        android:layout_alignLeft="@id/state_parent"
+        android:text="Parking" />
+
+
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_alignTop="@id/parking"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:onClick="calculate"/>
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/submit"
+        android:background="#FF0000"
+        android:padding="10dp"
+        android:hint="Total Cost($)"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp" />.
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

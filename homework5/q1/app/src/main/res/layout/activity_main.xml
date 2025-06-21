@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/warm_pink"
+    tools:context=".MainActivity">
+
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:rowCount="2"
+        android:columnCount="2">
+
+        <Button
+            android:id="@+id/play"
+            android:width="200dp"
+            android:height="200dp"
+            android:backgroundTint="@color/blue"
+            android:padding="10dp"
+            android:text="Play"
+            android:textSize="35dp"
+            android:textColor="@color/white"
+            android:onClick="play"
+            />
+
+        <Button
+            android:id="@+id/pause"
+            android:width="200dp"
+            android:height="200dp"
+            android:backgroundTint="@color/blue"
+            android:padding="10dp"
+            android:text="Pause"
+            android:textSize="35dp"
+            android:textColor="@color/white"
+            android:onClick="pause"
+            />
+        <Button
+            android:id="@+id/resume"
+            android:width="200dp"
+            android:height="200dp"
+            android:backgroundTint="@color/blue"
+            android:padding="10dp"
+            android:text="Resume"
+            android:textSize="35dp"
+            android:textColor="@color/white"
+            android:onClick="resume"
+            />
+        <Button
+            android:id="@+id/stop"
+            android:width="200dp"
+            android:height="200dp"
+            android:backgroundTint="@color/blue"
+            android:padding="10dp"
+            android:text="Stop"
+            android:textSize="35dp"
+            android:textColor="@color/white"
+            android:onClick="stop"
+            />
+
+
+
+
+    </GridLayout>
+
+</RelativeLayout>

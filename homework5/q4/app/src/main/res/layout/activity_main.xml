@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"/>
+
+
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="2"
+        android:columnCount="2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="450dp">
+
+        <Button
+            android:id="@+id/original"
+            android:layout_height="wrap_content"
+            android:layout_width="160dp"
+            android:text="Original"
+            android:textSize="20dp"
+            android:onClick="original"/>
+
+        <Button
+            android:id="@+id/greyscale"
+            android:layout_height="wrap_content"
+            android:layout_width="160dp"
+            android:layout_marginStart="10dp"
+            android:text="Greyscale"
+            android:textSize="20dp"
+            android:onClick="greyscale"/>
+
+        <Button
+            android:id="@+id/black_white"
+            android:layout_height="wrap_content"
+            android:layout_width="160dp"
+            android:text="B/W"
+            android:textSize="20dp"
+            android:onClick="black_white"/>
+
+        <Button
+            android:id="@+id/greenscale"
+            android:layout_height="wrap_content"
+            android:layout_width="160dp"
+            android:layout_marginStart="10dp"
+            android:text="Greenscale"
+            android:textSize="20dp"
+            android:onClick="greenscale"/>
+    </GridLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:textSize="25dp"/>
+
+        <EditText
+            android:id="@+id/subject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Subject Line"
+            android:textSize="25dp"/>
+
+        <EditText
+            android:id="@+id/email_body"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:hint="Write your email here"/>
+
+    </LinearLayout>
+
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:rowCount="2"
+        android:columnCount="2"
+        android:layout_centerInParent="true">
+
+        <Button
+            android:id="@+id/encrypt_button"
+            android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:backgroundTint="@color/blue"
+            android:textSize="25dp"
+            android:text="Encrypt"
+            android:onClick="encrypt"/>
+
+        <Button
+            android:id="@+id/decrypt_button"
+            android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:layout_marginStart="35dp"
+            android:backgroundTint="@color/blue"
+            android:textSize="25dp"
+            android:text="Decrypt"
+            android:onClick="decrypt"/>
+
+        <Button
+            android:id="@+id/send_button"
+            android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:backgroundTint="@color/blue"
+            android:textSize="25dp"
+            android:text="Send"
+            android:onClick="send"/>
+
+        <Button
+            android:id="@+id/change_button"
+            android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:layout_marginStart="35dp"
+            android:backgroundTint="@color/blue"
+            android:textSize="25dp"
+            android:text="Change"
+            android:onClick="change"/>
+
+
+
+    </GridLayout>
+</RelativeLayout>
+

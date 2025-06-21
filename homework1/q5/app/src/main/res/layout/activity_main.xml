@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+
+
+    <TextView
+        android:id="@+id/colorBox"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/black"
+        />
+
+
+    <EditText
+        android:id="@+id/blueBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Blue"
+        android:textSize="65dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/blue"
+        android:layout_marginTop="260dp"
+        />
+
+    <EditText
+        android:id="@+id/redBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Red"
+        android:textSize="65dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/red"
+        android:layout_marginTop="360dp"
+        />
+
+
+    <EditText
+        android:id="@+id/greenBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Green"
+        android:textSize="65dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/green"
+        android:layout_marginTop="460dp"
+        />
+
+
+
+
+</RelativeLayout>

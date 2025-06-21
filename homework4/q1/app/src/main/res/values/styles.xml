@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="widget_label">
+        <item name="android:background">#FF0000</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">20dp</item>
+       <item name="android:layout_marginStart">35dp</item>
+    </style>
+
+    <style name="widget_input">
+        <item name="android:background">#FFFFFF</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+</resources>

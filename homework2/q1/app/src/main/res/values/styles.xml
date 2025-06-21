@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- background for labels -->
+
+    <style name="label_background">
+        <item name="android:background">@color/green</item>
+    </style>
+
+    <!-- background for the text fields -->
+    <style name="text_field_background">
+        <item name="android:background">@color/grey</item>
+    </style>
+
+
+</resources>

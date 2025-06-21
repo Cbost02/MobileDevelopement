@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <!-- The final color (result) will be displayed in this layout -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp">
+
+        <!-- Square box -->
+        <TextView
+            android:id="@+id/color_box"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@color/black"
+            />
+    </RelativeLayout>
+
+
+    <!-- Layout for the Red Seek Bar -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="70dp">
+
+        <!-- Seek Bar has the following bounds: 0 - 255 -->
+        <SeekBar
+            android:id="@+id/red_bar"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@color/red"
+            android:max="255"
+            android:padding="10dp"/>
+        <TextView
+            android:id="@+id/red_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="0" />
+
+    </LinearLayout>
+
+
+    <!-- Layout for the Green Seek Bar -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp">
+
+        <!-- Seek Bar has the following bounds: 0 - 255 -->
+        <SeekBar
+            android:id="@+id/green_bar"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@color/green"
+            android:max="255"/>
+        <TextView
+            android:id="@+id/green_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="0" />
+
+    </LinearLayout>
+
+
+    <!-- Layout for the Blue Seek Bar -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp">
+
+        <!-- Seek Bar has the following bounds: 0 - 255 -->
+        <SeekBar
+            android:id="@+id/blue_bar"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@color/blue"
+            android:max="255"/>
+        <TextView
+            android:id="@+id/blue_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="0" />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

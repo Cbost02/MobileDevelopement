@@ -111,6 +111,7 @@ public class MainActivity extends AppCompatActivity
         outputBox.setText(outgoingString);
     }
 
+    // This method could use a little more work. It performs integer division
     public void div(View v)
     {
         EditText inputOne = findViewById(R.id.firstNum);
